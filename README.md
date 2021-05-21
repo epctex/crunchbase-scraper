@@ -39,7 +39,7 @@ This solution requires the use of **Proxy servers**, either your own proxy serve
 
 
 ### Compute Unit Consumption
-The actor optimized to run blazing fast and scrape many as properties as possible. Therefore, it forefronts all property detail requests. If actor doesn't block very often it'll scrape 50 items in 2 minutes with ~0.05-0.07 compute units.
+The actor optimized to run blazing fast and scrape many as items as possible. Therefore, it forefronts all item detail requests. If actor doesn't block very often it'll scrape 100 items in 1 minute with ~0.04-0.05 compute units.
 
 ### Crunchbase Scraper Input example
 ```json
