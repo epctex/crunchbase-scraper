@@ -41,13 +41,17 @@ You can see how this actor works these videos:
 
 ### Using Search
 
-[![Apify - Crunchbase Scraper - Using Search](https://img.youtube.com/vi/slcVzvJ3SII/0.jpg)](https://www.youtube.com/watch?v=slcVzvJ3SII)
+Watch how to set up Search for Crunchbase Scraper [here](https://www.youtube.com/watch?v=v9jJmKQiVuc).
+
+[![Apify - Crunchbase Scraper - Using Search](https://i.imgur.com/u6iIh0z.png)](https://www.youtube.com/watch?v=v9jJmKQiVuc)
 
 You can check the output of this example [here](https://api.apify.com/v2/datasets/8jdH5oJ9FpxhfJHYy/items?clean=true&format=json).
 
 ### Using Start URLs
 
-[![Apify - Crunchbase Scraper - Using Start URLs](https://img.youtube.com/vi/mBUi_ZS2gA8/0.jpg)](https://www.youtube.com/watch?v=mBUi_ZS2gA8)
+Watch how to set up Start URLs for Crunchbase Scraper [here](https://www.youtube.com/watch?v=n5v2RQSriHY).
+
+[![Apify - Crunchbase Scraper - Using Start URLs](https://i.imgur.com/1gIoSS5.png)](https://www.youtube.com/watch?v=n5v2RQSriHY)
 
 You can check the output of this example [here](https://api.apify.com/v2/datasets/qTFJkysc93HM26RwH/items?clean=true&format=json).
 
