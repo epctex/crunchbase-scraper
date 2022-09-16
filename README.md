@@ -28,32 +28,12 @@ The Crunchbase data scraper supports the following features:
 
 ## Bugs, fixes, updates and changelog
 
-This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/tugkan/crunchbase-scraper/issues).
+This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/epctex/crunchbase-scraper/issues).
 
 ### Incoming Changes
 
 -   Advanced search
 -   Fetch full descriptions alongside short_description
-
-## Setup & Usage
-
-You can see how this actor works these videos:
-
-### Using Search
-
-Watch how to set up Search for Crunchbase Scraper [here](https://www.youtube.com/watch?v=v9jJmKQiVuc).
-
-[![Apify - Crunchbase Scraper - Using Search](https://i.imgur.com/u6iIh0z.png)](https://www.youtube.com/watch?v=v9jJmKQiVuc)
-
-You can check the output of this example [here](https://api.apify.com/v2/datasets/8jdH5oJ9FpxhfJHYy/items?clean=true&format=json).
-
-### Using Start URLs
-
-Watch how to set up Start URLs for Crunchbase Scraper [here](https://www.youtube.com/watch?v=n5v2RQSriHY).
-
-[![Apify - Crunchbase Scraper - Using Start URLs](https://i.imgur.com/1gIoSS5.png)](https://www.youtube.com/watch?v=n5v2RQSriHY)
-
-You can check the output of this example [here](https://api.apify.com/v2/datasets/qTFJkysc93HM26RwH/items?clean=true&format=json).
 
 ## Input Parameters
 
@@ -66,6 +46,9 @@ The input of this scraper should be JSON containing the list of pages on Crunchb
 | maxItems  | Integer | (optional) You can limit scraped items.                                                                                                                                                                                                |
 | startUrls | Array   | (optional) List of Crunchbase URLs. You should only provide organization detail, person detail, event detail or hub detail URLs                                                                                                        |
 | proxy     | Object  | Proxy configuration                                                                                                                                                                                                                    |
+| extendOutputFunction | String | (optional) Function that takes a JQuery handle ($) as argument and returns object with data |
+| customMapFunction | String        | (optional) Function that takes each objects handle as argument and returns object with executing the function   |
+
 
 This solution requires the use of **Proxy servers**, either your own proxy servers or you can use [Apify Proxy](https://www.apify.com/docs/proxy).
 
@@ -350,7 +333,8 @@ An example structure of items in Crunchbase looks like this:
         "jobs_headline": {
             "num_current_jobs": 1
         },
-        "event_appearances_headline": {}
-    }
+        "event_appearances_headline": {},
+    },
+    "scrapedType": "person",
 }
 ```
