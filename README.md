@@ -37,18 +37,21 @@ This scraper is under active development. If you have any feature requests you c
 
 ## Input Parameters
 
-The input of this scraper should be JSON containing the list of pages on Crunchbase that should be visited. Required fields are:
+The input of this scraper should be JSON containing the list of pages on Crunchbase that should be visited. Possible fields are:
 
-| Field     | Type    | Description                                                                                                                                                                                                                            |
-| --------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| search    | String  | (optional) Keyword that can be searched in Crunchbase search engine. When it is present, `mode` must be used as well.                                                                                                                  |
-| mode      | String  | (optional) Mode of the actor. It gets the keyword from `search` parameter and initiate the search according to the mode. Can be `all`, `organizations`, `events`, `hubs` or `people`. When present, `search` must be provided as well. |
-| maxItems  | Integer | (optional) You can limit scraped items.                                                                                                                                                                                                |
-| startUrls | Array   | (optional) List of Crunchbase URLs. You should only provide organization detail, person detail, event detail or hub detail URLs                                                                                                        |
-| proxy     | Object  | Proxy configuration                                                                                                                                                                                                                    |
-| extendOutputFunction | String | (optional) Function that takes a JQuery handle ($) as argument and returns object with data |
-| customMapFunction | String        | (optional) Function that takes each objects handle as argument and returns object with executing the function   |
+- `search`: (Optional) (String) Keyword that can be searched in Crunchbase search engine. When it is present, `mode` must be used as well.
 
+- `mode`: (Optional) (String) Mode of the actor. It gets the keyword from `search` parameter and initiate the search according to the mode. Can be `all`, `organizations`, `events`, `hubs` or `people`. When present, `search` must be provided as well.
+
+- `startUrls`: (Optional) (Array) List of Crunchbase URLs. You should only provide organization detail, person detail, event detail or hub detail URLs.
+
+- `maxItems`: (Optional) (Number) You can limit scraped items. This should be useful when you search through the big lists or search results.
+
+- `proxy`: (Required) (Proxy Object) Proxy configuration.
+
+- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as argument and returns object with data.
+
+- `customMapFunction`: (Optional) (String) Function that takes each objects handle as argument and returns object with executing the function.
 
 This solution requires the use of **Proxy servers**, either your own proxy servers or you can use [Apify Proxy](https://www.apify.com/docs/proxy).
 
