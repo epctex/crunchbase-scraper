@@ -341,3 +341,6 @@ An example structure of items in Crunchbase looks like this:
     "scrapedType": "person",
 }
 ```
+
+## Contact
+Please visit us through [epctex.com](https://epctex.com) to see all the products that is available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [devops@epctex.com](mailto:devops@epctex.com) is at your service.
