@@ -1,3 +1,5 @@
+[https://apify.com/epctex/crunchbase-scraper](https://apify.com/epctex/crunchbase-scraper?fpr=yhdrb)
+
 # Crunchbase Scraper
 
 ## Crunchbase scraper
@@ -6,27 +8,27 @@ Since Crunchbase doesn't provide a proper and free API, this actor should help y
 
 The Crunchbase data scraper supports the following features:
 
--   **Scrape organization details** - You can scrape attributes like about, number of employees, technology, summary, people working or investment details of an organization. You can find details below.
+-   **Scrape organization details** - You can scrape attributes like about, number of employees, technology, summary, people working, or investment details of an organization. You can find details below.
 
--   **Scrape person details** - You can scrape attributes like title, name, CB Rank, primary organization, jobs or related hubs of a person. You can find details below.
+-   **Scrape person details** - You can scrape attributes like title, name, CB Rank, primary organization, jobs, or related hubs of a person. You can find details below.
 
--   **Scrape event details** - You can scrape attributes like speakers, name, location, date, venue and registration links of an event. You can find details below.
+-   **Scrape event details** - You can scrape attributes like speakers, name, location, date, venue, and registration links of an event. You can find details below.
 
--   **Scrape hub details** - You can scrape attributes like number of founders, name, founded date, acquired percentage and so on. You can find details below.
+-   **Scrape hub details** - You can scrape attributes like the number of founders, name, founded date, acquired percentage, and so on. You can find details below.
 
--   **Scrape by keyword** - You can use location-wise keywords to search specific search lists. Also you can directly point out rental, for sale or sold properties on this feature.
+-   **Scrape by keyword** - You can use location-wise keywords to search specific search lists. Also, you can directly point out rental, for sale, or sold properties on this feature.
 
 ## Possible Use-cases
 
 -   **Competitor analysis:** You can use this actor to get detailed information about your competitors
 
--   **Data Analysis:** - You can analyse CrunchBase data any way you want from organizations to events.
+-   **Data Analysis:** - You can analyze CrunchBase data any way you want from organizations to events.
 
 -   **News and Signals:** Get news and signals from organizations
 
 -   **Due Dillegence**
 
-## Bugs, fixes, updates and changelog
+## Bugs, fixes, updates, and changelog
 
 This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/epctex/crunchbase-scraper/issues).
 
@@ -41,23 +43,23 @@ The input of this scraper should be JSON containing the list of pages on Crunchb
 
 - `search`: (Optional) (String) Keyword that can be searched in Crunchbase search engine. When it is present, `mode` must be used as well.
 
-- `mode`: (Optional) (String) Mode of the actor. It gets the keyword from `search` parameter and initiate the search according to the mode. Can be `all`, `organizations`, `events`, `hubs` or `people`. When present, `search` must be provided as well.
+- `mode`: (Optional) (String) Mode of the actor. It gets the keyword from `search` parameter and initiates the search according to the mode. Can be `all`, `organizations`, `events`, `hubs`, or `people`. When present, `search` must be provided as well.
 
-- `startUrls`: (Optional) (Array) List of Crunchbase URLs. You should only provide organization detail, person detail, event detail or hub detail URLs.
+- `startUrls`: (Optional) (Array) List of Crunchbase URLs. You should only provide organization detail, person detail, event detail, or hub detail URLs.
 
 - `maxItems`: (Optional) (Number) You can limit scraped items. This should be useful when you search through the big lists or search results.
 
 - `proxy`: (Required) (Proxy Object) Proxy configuration.
 
-- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as argument and returns object with data.
+- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as an argument and returns an object with data.
 
-- `customMapFunction`: (Optional) (String) Function that takes each objects handle as argument and returns object with executing the function.
+- `customMapFunction`: (Optional) (String) Function that takes each object's handle as an argument and returns the object with executing the function.
 
 This solution requires the use of **Proxy servers**, either your own proxy servers or you can use [Apify Proxy](https://www.apify.com/docs/proxy).
 
 ### Compute Unit Consumption
 
-The actor optimized to run blazing fast and scrape many as items as possible. Therefore, it forefronts all item detail requests. If actor doesn't block very often it'll scrape 100 items in 1 minute with ~0.04-0.05 compute units.
+The actor is optimized to run blazing fast and scrape many items as possible. Therefore, it forefronts all item detail requests. If the actor doesn't block very often it'll scrape 100 items in 1 minute with ~0.04-0.05 compute units.
 
 ### Crunchbase Scraper Input example
 
@@ -83,13 +85,13 @@ The actor optimized to run blazing fast and scrape many as items as possible. Th
 During the run, the actor will output messages letting you know what is going on. Each message always contains a short label specifying which page from the provided list is currently specified.
 When items are loaded from the page, you should see a message about this event with a loaded item count and total item count for each page.
 
-If you provide incorrect input to the actor, it will immediately stop with failure state and output an explanation of what is wrong.
+If you provide incorrect input to the actor, it will immediately stop with a failure state and output an explanation of what is wrong.
 
 ## Crunchbase Export
 
 During the run, the actor stores results into a dataset. Each item is a separate item in the dataset.
 
-You can manage the results in any languague (Python, PHP, Node JS/NPM). See the FAQ or <a href="https://www.apify.com/docs/api" target="blank">our API reference</a> to learn more about getting results from this Crunchbase actor.
+You can manage the results in any language (Python, PHP, Node JS/NPM). See the FAQ or <a href="https://www.apify.com/docs/api" target="blank">our API reference</a> to learn more about getting results from this Crunchbase actor.
 
 ## Example Crunchbase Items
 
@@ -343,4 +345,4 @@ An example structure of items in Crunchbase looks like this:
 ```
 
 ## Contact
-Please visit us through [epctex.com](https://epctex.com) to see all the products that is available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [devops@epctex.com](mailto:devops@epctex.com) is at your service.
+Please visit us through [epctex.com](https://epctex.com) to see all the products that are available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [devops@epctex.com](mailto:devops@epctex.com) is at your service.
